@@ -1,51 +1,110 @@
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  useDisclosure, Button, Box,
-} from "@chakra-ui/react"
-import React from "react";
+import { Box, Flex, Heading, HStack, Img, Stack, Text, useColorModeValue } from '@chakra-ui/react'
+import * as React from 'react'
+import { MdGroup, MdPermPhoneMsg } from 'react-icons/md'
 
-function Lorem(props) {
-  return null;
-}
-
-function ReturnFocus() {
-  const {isOpen, onOpen, onClose} = useDisclosure()
-  const finalRef = React.useRef()
-
+export default function App ()  {
   return (
-    <>
-      <Box ref={finalRef} tabIndex={-1} aria-label="Focus moved to this box">
-        Some other content that'll receive focus on close.
+    <Box as="section">
+      <Box
+        maxW={{
+          base: 'xl',
+          md: '7xl',
+        }}
+        mx="auto"
+        px={{
+          base: '6',
+          md: '8',
+        }}
+        py="12"
+      >
+        <Flex
+          align="center"
+          justify="center"
+          direction={{
+            base: 'column-reverse',
+            md: 'row',
+          }}
+        >
+          <Box flex="1" maxW="440px">
+            <Heading
+              size="2xl"
+              fontWeight="extrabold"
+              color={useColorModeValue('blue.600', 'blue.300')}
+            >
+              武漢肺炎
+            </Heading>
+            <Text
+              fontSize="lg"
+              fontWeight="medium"
+              color={useColorModeValue('gray.600', 'inherit')}
+              mt="6"
+            >
+              旁邊 QR CODE 是 LINE
+              這邊打公告 12312312321321
+            </Text>
+
+            <Stack
+              mt={{
+                base: '8',
+                md: '16',
+              }}
+              spacing="4"
+              fontWeight="extrabold"
+            >
+              <HStack spacing="5" color={useColorModeValue('blue.600', 'blue.300')}>
+                <Box fontSize="3xl" as={MdPermPhoneMsg} />
+                <Text
+                  fontSize={{
+                    base: 'xl',
+                    md: '2xl',
+                  }}
+                >
+                  0800 123 456
+                </Text>
+              </HStack>
+              <HStack spacing="5" color={useColorModeValue('blue.600', 'blue.300')}>
+                <Box fontSize="3xl" as={MdGroup} />
+                <Text
+                  fontSize={{
+                    base: 'xl',
+                    md: '2xl',
+                  }}
+                >
+                  TEST
+                </Text>
+              </HStack>
+            </Stack>
+          </Box>
+
+          <Box
+            aria-hidden
+            className="spacer"
+            flexShrink={0}
+            boxSize={{
+              base: '10',
+              xl: '20',
+            }}
+          />
+
+          <Box
+            flex="1"
+            maxW="560px"
+            h={{
+              base: '400px',
+              md: '460px',
+            }}
+          >
+            <Img
+              alt="Call center"
+              w="full"
+              h="full"
+              objectFit="cover"
+              objectPosition="right"
+              src="/line.png"
+            />
+          </Box>
+        </Flex>
       </Box>
-
-      <Button mt={4} onClick={onOpen} >
-        Open Modal
-      </Button>
-      <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay/>
-        <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
-          <ModalCloseButton/>
-          <ModalBody>
-            <Lorem count={2}/>
-          </ModalBody>
-
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
-              Close
-            </Button>
-            <Button variant="ghost">Secondary Action</Button>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
-    </>
+    </Box>
   )
 }
-
-export default ReturnFocus;

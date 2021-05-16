@@ -27,6 +27,32 @@ export default function App ()  {
             md: 'row',
           }}
         >
+          <Box
+            aria-hidden
+            className="spacer"
+            flexShrink={0}
+            boxSize={{
+              base: '10',
+              xl: '20',
+            }}
+          />
+
+          <Box
+            flex="1"
+            maxW="560px"
+            h={{
+              base: '400px',
+              md: '460px',
+            }}
+          >
+            <Image
+              src="/line.png"
+              alt="https://lin.ee/sBFIv9V"
+              width={500}
+              height={500}
+            />
+          </Box>
+
           <Box flex="1" maxW="440px">
             <Heading
               size="2xl"
@@ -83,31 +109,7 @@ export default function App ()  {
             </Stack>
           </Box>
 
-          <Box
-            aria-hidden
-            className="spacer"
-            flexShrink={0}
-            boxSize={{
-              base: '10',
-              xl: '20',
-            }}
-          />
 
-          <Box
-            flex="1"
-            maxW="560px"
-            h={{
-              base: '400px',
-              md: '460px',
-            }}
-          >
-            <Image
-              src="/line.png"
-              alt="https://lin.ee/sBFIv9V"
-              width={500}
-              height={500}
-            />
-          </Box>
         </Flex>
       </Box>
     </Box>

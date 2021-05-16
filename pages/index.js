@@ -1,6 +1,8 @@
-import { Box, Flex, Heading, HStack, Img, Stack, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Flex, Heading, HStack, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
-import { MdGroup, MdPermPhoneMsg } from 'react-icons/md'
+import { MdPermPhoneMsg } from 'react-icons/md'
+import { BiMessageSquareDetail } from 'react-icons/bi'
+import Image from 'next/image'
 
 export default function App ()  {
   return (
@@ -31,7 +33,7 @@ export default function App ()  {
               fontWeight="extrabold"
               color={useColorModeValue('blue.600', 'blue.300')}
             >
-              武漢肺炎
+              《關網資訊公告》
             </Heading>
             <Text
               fontSize="lg"
@@ -39,8 +41,7 @@ export default function App ()  {
               color={useColorModeValue('gray.600', 'inherit')}
               mt="6"
             >
-              旁邊 QR CODE 是 LINE
-              這邊打公告 12312312321321
+              因應疫情及政府宣布 5/15-5/28 雙北提升為三級防疫，本公司自 5/17 起實施分流上班。實施期間因部分人員遠距工作，業務及客戶服務工作之流程與反應速度可能受到影響，如造成 貴客戶之不便，敬請見諒。防疫工作人人有責，關網資訊感謝您的支持與體諒！
             </Text>
 
             <Stack
@@ -59,18 +60,24 @@ export default function App ()  {
                     md: '2xl',
                   }}
                 >
-                  0800 123 456
+                  (02) 7750-5070
                 </Text>
               </HStack>
               <HStack spacing="5" color={useColorModeValue('blue.600', 'blue.300')}>
-                <Box fontSize="3xl" as={MdGroup} />
+                <Box fontSize="3xl" as={BiMessageSquareDetail} />
                 <Text
                   fontSize={{
                     base: 'xl',
                     md: '2xl',
                   }}
                 >
-                  TEST
+                  <a href="https://lin.ee/sBFIv9V">關網 LINE <Image
+                    src="/zh-Hant.png"
+                    alt="https://lin.ee/sBFIv9V"
+                    width={155}
+                    height={48}
+                  /><br/>或掃描旁邊 QR Code</a>
+
                 </Text>
               </HStack>
             </Stack>
@@ -94,13 +101,11 @@ export default function App ()  {
               md: '460px',
             }}
           >
-            <Img
-              alt="Call center"
-              w="full"
-              h="full"
-              objectFit="cover"
-              objectPosition="right"
+            <Image
               src="/line.png"
+              alt="https://lin.ee/sBFIv9V"
+              width={500}
+              height={500}
             />
           </Box>
         </Flex>

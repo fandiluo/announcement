@@ -67,9 +67,11 @@ export default function App ()  {
               color={useColorModeValue('gray.600', 'inherit')}
               mt="6"
             >
-              因應疫情及政府宣布全國提升為三級警戒，本公司自 5/17 起分流上班。實施期間因部分人員遠距工作，可能影響業務及客戶服務工作之流程與反應速度，如造成 貴客戶之不便，敬請見諒！後續若有相關調整或更新，本公司將會另行公告。
-              <Text color="red">另防疫期間客服電話線數較少，如忙線中請掃描 QR code，加入本公司 LINE 好友，立即可利用 LINE 與客服聯繫。</Text>
-              防疫工作人人有責，關網資訊感謝您的支持與體諒！
+
+              <b>財政部電子發票平台維護公告</b><br/>
+                財政部電子發票平台於 110 年 8 月 3 日 18:00 至 110 年 8 月 4 日 07:00 暫停營運服務，公告連結如下：
+                <a href={"https://www.einvoice.nat.gov.tw/home/Article!showArticleDetail?articleId=1627031907194"}>https://www.einvoice.nat.gov.tw/home/Article!showArticleDetail?articleId=1627031907194</a>
+
             </Text>
 
             <Stack

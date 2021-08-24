@@ -1,7 +1,20 @@
-import { Box, Flex, Heading, HStack, Stack, Text, useColorModeValue } from '@chakra-ui/react'
+import {
+  Box,
+  Flex,
+  Heading,
+  HStack,
+  Link,
+  ListItem,
+  OrderedList,
+  Stack,
+  Text,
+  useColorModeValue
+} from '@chakra-ui/react'
 import * as React from 'react'
 import { MdPermPhoneMsg } from 'react-icons/md'
 import { BiMessageSquareDetail } from 'react-icons/bi'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+
 import Image from 'next/image'
 
 export default function App ()  {
@@ -68,9 +81,21 @@ export default function App ()  {
               mt="6"
             >
 
-              <b>財政部電子發票平台維護公告</b><br/>
-                財政部電子發票平台於 110 年 8 月 3 日 18:00 至 110 年 8 月 4 日 07:00 暫停營運服務，公告連結如下：
-                <a href={"https://www.einvoice.nat.gov.tw/home/Article!showArticleDetail?articleId=1627031907194"}>https://www.einvoice.nat.gov.tw/home/Article!showArticleDetail?articleId=1627031907194</a>
+              <Link href="https://www.einvoice.nat.gov.tw/home/Article!showArticleDetail?articleId=1629437873051" isExternal>
+                <b>財政部電子發票平台維護公告</b><ExternalLinkIcon mx="2px" />
+              </Link>
+              <Text>財政部電子發票平台於 2021/09/08 線路維護</Text>
+               <Text>可能造成以下情況：</Text>
+              <OrderedList>
+                <ListItem><Text>無法取回發票號碼及相關的資訊</Text></ListItem>
+                <ListItem><Text>無法作廢發票，無法開立折讓單，無法作廢折讓單</Text></ListItem>
+                <ListItem><Text>無法發送email等通知</Text></ListItem>
+
+              </OrderedList>
+                <br/>
+               <Text>關網工程師會密切注意監控相關程式運作，並保持最新狀況的回覆</Text>
+
+
 
             </Text>
 

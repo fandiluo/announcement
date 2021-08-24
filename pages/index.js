@@ -89,7 +89,7 @@ export default function App ()  {
               <OrderedList>
                 <ListItem><Text>無法取回發票號碼及相關的資訊</Text></ListItem>
                 <ListItem><Text>無法作廢發票，無法開立折讓單，無法作廢折讓單</Text></ListItem>
-                <ListItem><Text>無法發送email等通知</Text></ListItem>
+                <ListItem><Text>無法發送 email 等通知</Text></ListItem>
 
               </OrderedList>
                 <br/>

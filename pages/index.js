@@ -81,19 +81,19 @@ export default function App ()  {
               mt="6"
             >
 
-              <Link href="https://www.einvoice.nat.gov.tw/home/Article!showArticleDetail?articleId=1629437873051" isExternal>
-                <b>財政部電子發票平台維護公告</b><ExternalLinkIcon mx="2px" />
-              </Link>
-              <Text>財政部電子發票平台於 2021/09/08 線路維護</Text>
-               <Text>可能造成以下情況：</Text>
-              <OrderedList>
-                <ListItem><Text>無法取回發票號碼及相關的資訊</Text></ListItem>
-                <ListItem><Text>無法作廢發票，無法開立折讓單，無法作廢折讓單</Text></ListItem>
-                <ListItem><Text>無法發送 email 等通知</Text></ListItem>
+              {/*<Link href="https://www.einvoice.nat.gov.tw/home/Article!showArticleDetail?articleId=1629437873051" isExternal>*/}
+              {/*  <b>財政部電子發票平台維護公告</b><ExternalLinkIcon mx="2px" />*/}
+              {/*</Link>*/}
+              <Text>為提升服務品質與加強系統安全，電子發票系統擬於 2021/10/06 (三) 01:00 至 2021/10/06 (三) 05:00 暫停服務，進行系統更新，造成不便，懇請見諒。</Text>
+              {/* <Text>可能造成以下情況：</Text>*/}
+              {/*<OrderedList>*/}
+              {/*  <ListItem><Text>無法取回發票號碼及相關的資訊</Text></ListItem>*/}
+              {/*  <ListItem><Text>無法作廢發票，無法開立折讓單，無法作廢折讓單</Text></ListItem>*/}
+              {/*  <ListItem><Text>無法發送 email 等通知</Text></ListItem>*/}
 
-              </OrderedList>
-                <br/>
-               <Text>關網工程師會密切注意監控相關程式運作，並保持最新狀況的回覆</Text>
+              {/*</OrderedList>*/}
+              {/*  <br/>*/}
+              {/* <Text>關網工程師會密切注意監控相關程式運作，並保持最新狀況的回覆</Text>*/}
 
 
 

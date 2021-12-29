@@ -84,7 +84,7 @@ export default function App ()  {
               {/*<Link href="https://www.einvoice.nat.gov.tw/home/Article!showArticleDetail?articleId=1629437873051" isExternal>*/}
               {/*  <b>財政部電子發票平台維護公告</b><ExternalLinkIcon mx="2px" />*/}
               {/*</Link>*/}
-              <Text>為提升服務品質與加強系統安全，電子發票系統擬於 2021/12/21 (二) 06:00 至 2021/12/21 (三) 08:00 暫停服務，進行系統更新，造成不便，懇請見諒。</Text>
+              <Text>為提升服務品質與加強系統安全，電子發票系統擬於 2021/12/30 (四) 01:00 至 2021/12/30 (四) 02:00 暫停服務，進行系統更新，造成不便，懇請見諒。</Text>
               {/* <Text>可能造成以下情況：</Text>*/}
               {/*<OrderedList>*/}
               {/*  <ListItem><Text>無法取回發票號碼及相關的資訊</Text></ListItem>*/}
